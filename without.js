@@ -28,10 +28,10 @@ const without = function(sourceArr, removeArr) {
   return newArray;
 };
 
-//const words = ["hello", "world", "lighthouse"];
-//without(words, ["lighthouse"]);
-//assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]);
 
-//assertArraysEqual(without(["1", "2", "3","88"], [1, 2, "3", "4", 6, 4, 3]),["1","2"]);
-//assertArraysEqual(without(["1", "2", "3"], [1, 2, "3", "4", 6, 4, 3]),["1","2"]);
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
+assertArraysEqual(without(["1", "2", "3","88"], [1, 2, "3", "4", 6, 4, 3]),["1","2"]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3", "4", 6, 4, 3]),["1","2"]);
